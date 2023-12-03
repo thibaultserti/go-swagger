@@ -15,7 +15,7 @@ builds:
     goarch:
       - amd64
       - arm64
-    main: ./cmd/hello
+    main: .
 
 archives:
   - format: tar.gz
