@@ -1,0 +1,13 @@
+---
+    name: Release
+    on:
+      push:
+        branches:
+          - main
+    jobs:
+      go-release:
+        uses: thibaultserti/gh-actions-reusable-workflows/.github/workflows/push-go-release.yaml@main
+        permissions:
+          contents: write
+          issues: write
+          pull-requests: write

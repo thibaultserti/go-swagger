@@ -1,0 +1,25 @@
+basePath: /
+externalDocs:
+  description: OpenAPI
+  url: https://swagger.io/resources/open-api/
+host: localhost:8080
+info:
+  contact: {}
+  description: Your API Description
+  title: Your API Title
+  version: "1.0"
+paths:
+  /hello:
+    get:
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            type: string
+      summary: Returns a greeting with the user's name
+securityDefinitions:
+  None:
+    type: basic
+swagger: "2.0"
